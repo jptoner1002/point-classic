@@ -225,9 +225,9 @@
   }
 
   /* ── CHAMPIONS TAB ── */
-  .champs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .champs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; }
   @media(max-width:700px){ .champs-grid { grid-template-columns: 1fr; } }
-  .roll-list { max-height: 560px; overflow-y: auto; }
+  .roll-list { }
   .roll-item {
     display: flex; align-items: center; padding: 9px 18px;
     border-bottom: 1px solid var(--paper); cursor: pointer; transition: background .1s;
@@ -241,7 +241,7 @@
   .roll-name.multi { font-weight: 700; color: #c8a820; font-family: 'Playfair Display', serif; }
   .roll-score { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 13px; }
 
-  .wins-list .win-row {
+  .wins-list { height: 100%; } .wins-list .win-row {
     display: flex; align-items: center; padding: 11px 18px;
     border-bottom: 1px solid var(--paper);
   }
